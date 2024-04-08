@@ -9,7 +9,8 @@ app.use(express.json());
 
 // Add this middleware to allow CORS
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500'); // Replace with your frontend URL
+    //res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+    res.setHeader('Access-Control-Allow-Origin', 'https://brunoam792.github.io/sodv1201_assignment_2_sport_frondend/registration.html');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
